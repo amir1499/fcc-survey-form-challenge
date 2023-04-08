@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">Hamdan Education Center</title>
+  <link rel="stylesheet" href="survey.form.css"/>
+</head>
+<body>
+ <main>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Hamdan Education Center survey Form</h1>
+      <p id="description" class="description text-center">Thanks For Giving Your Precious Time And Opinion</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter Your Name" required/>
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required/>
+      </div>
+      <div>
+        <label id="number-label" for="number">Age</label>
+        <input type="number" id="number" name="age" class="form-control" min="13" max="75" placeholder="Age" required/>
+      </div>
+      <div class="form-group">
+        <p>Which OPtion Best Describes You ?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select Current Role</option>
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would You Recommend  Hamdan Education Center To A Friend.?</p>
+        <label>
+          <input name="user-recommend" value="yes" type="radio" class="input-radio" checked/>Yes
+        </label>
+        <label>
+          <input name="user-recommend" value="no" type="radio" class="input-radio"/>No
+        </label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio"
+          class="input-radio"/>Maybe
+        </label>
+        <label>
+          <input name="user-recommend" value="notsure" type="radio"/ class="input-radio">Not Sure
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What is Your Favorite  Feature of Hamdan Education Center</p>
+        <select id="most-like" name="mostlike" class="form-control" required>
+          <option disabled selected value>Select An Option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Languages And Frameworks Known<span class="clue">(check all that apply)</span></p>
+        <label>
+          <input name="prefer" value="c" type="checkbox" class="input-checkbox"/>C
+        </label>
+        <label>
+          <input name="prefer" value="c++" type="checkbox" class="input-checkbox"/>C++
+        </label>
+        <label>
+          <input name="prefer" value="c#" type="checkbox" class="input-checkbox"/>C#
+        </label>
+        <label>
+          <input name="prefer" value="java" type="checkbox" class="input-checkbox"/>Java
+        </label>
+        <label>
+          <input name="prefer" value="python" type="checkbox" class="input-checkbox"/>Python
+        </label>
+        <label>
+          <input name="prefer" value="javascript" type="checkbox" class="input-checkbox"/>JavaScript
+        </label>
+        <label>
+          <input name="prefer" value="react" type="checkbox" class="input-checkbox"/>React
+        </label>
+        <label>
+          <input name="prefer" value="angular" type="checkbox" class="input-checkbox"/>Angular
+        </label>
+        <label>
+          <input name="prefer" value="mongodb" type="checkbox" class="input-checkbox"/>Mongodb
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What Would You Like To See Improved.?<span class="clue">(check all that apply)</span></p>
+        <Label>
+          <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Front-End-Projects
+        </Label>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>Back-End-Projects
+        </label>
+        <label>
+          <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Data-Visualization
+        </label>
+        <label>
+          <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>Challenges
+        </label>
+        <label>
+          <input name="prefer"/ value="open-source-community" type="checkbox" class="input-checkbox">Open-Source -Community
+        </label>
+        <label>
+          <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox"/>Gitter-Help-Rooms
+        </label>
+        <label>
+          <input name="prefer" value="videos" type="checkbox" class="input-checkbox"/>Videos
+        </label>
+        <label>
+          <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox"/>City-Meetups
+        </label>
+        <label>
+          <input name="prefer" value="wiki" type="checkbox" class="input-checkbox"/>Wiki
+        </label>
+        <label>
+          <input name="prefer" value="forum" type="checkbox" class="input-checkbox"/>Forum
+        </label>
+        <label>
+          <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox"/>Additional-Courses
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any Comments or Suggestions.?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter Your Comments Here...."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+ </main> 
+</body>
+</html>
